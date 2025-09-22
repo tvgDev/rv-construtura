@@ -47,6 +47,13 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        construction: {
+          dark: "hsl(var(--construction-dark))",
+          gray: "hsl(var(--construction-gray))",
+          "light-gray": "hsl(var(--construction-light-gray))",
+          gold: "hsl(var(--construction-gold))",
+          "gold-dark": "hsl(var(--construction-gold-dark))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -84,6 +91,20 @@ export default {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "fade-in-up": "fadeInUp 0.6s ease-out",
+        "fade-in-left": "fadeInLeft 0.6s ease-out",
+        "fade-in-right": "fadeInRight 0.6s ease-out",
+        "float": "float 3s ease-in-out infinite",
+      },
+      backgroundImage: {
+        "gradient-hero": "var(--gradient-hero)",
+        "gradient-gold": "var(--gradient-gold)",
+        "gradient-overlay": "var(--gradient-overlay)",
+      },
+      boxShadow: {
+        "gold": "var(--shadow-gold)",
+        "card": "var(--shadow-card)",
+        "hero": "var(--shadow-hero)",
       },
     },
   },
