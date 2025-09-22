@@ -15,12 +15,22 @@ const HeroSection = () => {
             transition={{ duration: 0.8 }}
             className="space-y-8"
           >
-            <div className="space-y-4">
+            {/* Instagram Text */}
+            <motion.p 
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.1, duration: 0.6 }}
+              className="text-sm text-muted-foreground font-light uppercase tracking-wider"
+            >
+              acesse: @lrdemolição no instagram
+            </motion.p>
+
+            <div className="space-y-6">
               <motion.h1 
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2, duration: 0.8 }}
-                className="text-hero text-primary"
+                className="text-6xl lg:text-7xl font-bold text-foreground tracking-tight"
               >
                 QUEM SOMOS
               </motion.h1>
@@ -31,47 +41,19 @@ const HeroSection = () => {
                 transition={{ delay: 0.4, duration: 0.8 }}
                 className="text-lg text-muted-foreground leading-relaxed max-w-2xl"
               >
-                Somos uma empresa especializada em construção civil, comprometida com a excelência e inovação. 
+                Somos uma empresa especializada em demolição e construção civil, comprometida com a excelência e inovação. 
                 Nossa equipe experiente oferece soluções completas para seus projetos, desde o planejamento até a entrega final.
-              </motion.p>
-
-              <motion.p 
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.6, duration: 0.8 }}
-                className="text-muted-foreground leading-relaxed"
-              >
-                Com anos de experiência no mercado, transformamos sonhos em realidade através de construções de qualidade superior, 
-                sempre priorizando a segurança, sustentabilidade e satisfação dos nossos clientes.
               </motion.p>
             </div>
 
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.8, duration: 0.8 }}
-              className="flex flex-col sm:flex-row gap-4"
+              transition={{ delay: 0.6, duration: 0.8 }}
             >
-              <Button className="btn-gold text-lg px-8 py-4">
-                NOSSOS PROJETOS
+              <Button className="bg-black text-white hover:bg-black/90 text-lg px-8 py-4 rounded-full">
+                VEJA MAIS
               </Button>
-              <Button variant="outline" className="btn-outline-gold text-lg px-8 py-4">
-                FALE CONOSCO
-              </Button>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 1, duration: 0.8 }}
-              className="flex items-center space-x-4 pt-8"
-            >
-              <div className="flex -space-x-2">
-                <div className="w-3 h-3 bg-secondary rounded-full"></div>
-                <div className="w-3 h-3 bg-muted rounded-full"></div>
-                <div className="w-3 h-3 bg-muted rounded-full"></div>
-              </div>
-              <span className="text-sm text-muted-foreground">01 / 05</span>
             </motion.div>
           </motion.div>
 
