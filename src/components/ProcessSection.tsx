@@ -63,24 +63,14 @@ const ProcessSection = () => {
               viewport={{ once: true }}
               className="flex items-center gap-8"
             >
-              {/* Number */}
-              <div className="flex-shrink-0">
-                <div className="w-16 h-16 bg-black rounded-full flex items-center justify-center">
+              {/* Number and Content */}
+              <div className="flex items-start gap-4 flex-shrink-0">
+                <div className="w-16 h-16 bg-black rounded-full flex items-center justify-center flex-shrink-0">
                   <span className="text-white font-bold text-2xl">
                     {process.number}
                   </span>
                 </div>
-              </div>
-
-              {/* Connecting Line */}
-              <div className="flex-grow h-px bg-gray-300 relative">
-                <div className="absolute left-0 top-0 h-full bg-black animate-[scale-in_1s_ease-out] origin-left" 
-                     style={{ width: '100%' }}></div>
-              </div>
-
-              {/* Content */}
-              <div className="flex-shrink-0 w-80">
-                <div className="text-left mb-6">
+                <div className="max-w-sm">
                   <h3 className="text-2xl font-bold text-black mb-3">
                     {process.title}
                   </h3>
@@ -88,6 +78,12 @@ const ProcessSection = () => {
                     {process.description}
                   </p>
                 </div>
+              </div>
+
+              {/* Connecting Line */}
+              <div className="flex-grow h-px bg-gray-300 relative">
+                <div className="absolute left-0 top-0 h-full bg-black animate-[scale-in_1s_ease-out] origin-left" 
+                     style={{ width: '100%' }}></div>
               </div>
 
               {/* Image */}
