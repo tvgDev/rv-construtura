@@ -5,91 +5,89 @@ import logo3D from '@/assets/logo-3d.jpg';
 
 const HeroSection = () => {
   return (
-    <section id="inicio" className="min-h-screen bg-white flex items-center justify-center relative overflow-hidden">
-      <div className="container mx-auto px-6 pt-32 pb-20">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Content */}
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            className="space-y-8"
-          >
-            {/* Instagram Text */}
-            <motion.p 
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.1, duration: 0.6 }}
-              className="text-sm text-muted-foreground font-light uppercase tracking-wider"
+    <section id="inicio" className="min-h-screen bg-black flex items-center justify-center relative overflow-hidden pt-24">
+      <div className="container mx-auto px-6">
+        <div className="bg-white rounded-[3rem] p-16 shadow-2xl">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Content */}
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              className="space-y-8"
             >
-              acesse: @lrdemolição no instagram
-            </motion.p>
-
-            <div className="space-y-6">
-              <motion.h1 
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.2, duration: 0.8 }}
-                className="text-6xl lg:text-7xl font-bold text-foreground tracking-tight"
-              >
-                QUEM SOMOS
-              </motion.h1>
-              
+              {/* Instagram Text */}
               <motion.p 
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.1, duration: 0.6 }}
+                className="text-sm text-muted-foreground font-light uppercase tracking-wider"
+              >
+                acesse: @lrdemolição no instagram
+              </motion.p>
+
+              <div className="space-y-6">
+                <motion.h1 
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.2, duration: 0.8 }}
+                  className="text-6xl lg:text-7xl font-bold text-foreground tracking-tight"
+                >
+                  QUEM SOMOS
+                </motion.h1>
+                
+                <motion.p 
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.4, duration: 0.8 }}
+                  className="text-lg text-muted-foreground leading-relaxed max-w-2xl"
+                >
+                  Somos uma empresa especializada em demolição e construção civil, comprometida com a excelência e inovação. 
+                  Nossa equipe experiente oferece soluções completas para seus projetos, desde o planejamento até a entrega final.
+                </motion.p>
+              </div>
+
+              <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.4, duration: 0.8 }}
-                className="text-lg text-muted-foreground leading-relaxed max-w-2xl"
+                transition={{ delay: 0.6, duration: 0.8 }}
               >
-                Somos uma empresa especializada em demolição e construção civil, comprometida com a excelência e inovação. 
-                Nossa equipe experiente oferece soluções completas para seus projetos, desde o planejamento até a entrega final.
-              </motion.p>
-            </div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.6, duration: 0.8 }}
-            >
-              <Button className="bg-black text-white hover:bg-black/90 text-lg px-8 py-4 rounded-full">
-                VEJA MAIS
-              </Button>
+                <Button className="bg-black text-white hover:bg-black/90 text-lg px-8 py-4 rounded-full">
+                  VEJA MAIS
+                </Button>
+              </motion.div>
             </motion.div>
-          </motion.div>
 
-          {/* 3D Logo */}
-          <motion.div
-            initial={{ opacity: 0, x: 50, scale: 0.8 }}
-            animate={{ opacity: 1, x: 0, scale: 1 }}
-            transition={{ duration: 1, delay: 0.3 }}
-            className="flex justify-center"
-          >
+            {/* 3D Logo */}
             <motion.div
-              animate={{ 
-                rotateY: [0, 360],
-                scale: [1, 1.05, 1]
-              }}
-              transition={{ 
-                duration: 8,
-                repeat: Infinity,
-                ease: "linear"
-              }}
-              className="relative"
+              initial={{ opacity: 0, x: 50, scale: 0.8 }}
+              animate={{ opacity: 1, x: 0, scale: 1 }}
+              transition={{ duration: 1, delay: 0.3 }}
+              className="flex justify-center"
             >
-              <img 
-                src={logo3D} 
-                alt="Logo 3D RV Construções" 
-                className="w-96 h-96 object-contain drop-shadow-2xl"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-transparent to-white/20 rounded-full"></div>
+              <motion.div
+                animate={{ 
+                  rotateY: [0, 360],
+                  scale: [1, 1.05, 1]
+                }}
+                transition={{ 
+                  duration: 8,
+                  repeat: Infinity,
+                  ease: "linear"
+                }}
+                className="relative"
+              >
+                <img 
+                  src={logo3D} 
+                  alt="Logo 3D RV Construções" 
+                  className="w-96 h-96 object-contain drop-shadow-2xl"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-transparent to-white/20 rounded-full"></div>
+              </motion.div>
             </motion.div>
-          </motion.div>
+          </div>
         </div>
       </div>
-
-      {/* Background Elements */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-secondary/10 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 left-0 w-64 h-64 bg-primary/5 rounded-full blur-2xl"></div>
     </section>
   );
 };
