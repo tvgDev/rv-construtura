@@ -6,8 +6,8 @@ import logo3D from '@/assets/logo-3d.jpg';
 const HeroSection = () => {
   return (
     <section id="inicio" className="min-h-screen bg-black flex items-center justify-center relative overflow-hidden pt-24">
-      <div className="container mx-auto px-6">
-        <div className="bg-white rounded-[3rem] p-16 shadow-2xl">
+  <div className="w-full bg-white rounded-t-[3rem] rounded-b-[3rem] min-h-[calc(100vh-6rem)] flex items-center">
+  <div className="container mx-auto px-6 py-16">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Content */}
             <motion.div
