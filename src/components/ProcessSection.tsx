@@ -39,7 +39,7 @@ const ProcessSection = () => {
   ];
 
   return (
-    <section id="processos" className="py-20 bg-construction-light-gray">
+    <section id="processos" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -48,63 +48,59 @@ const ProcessSection = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-section-title text-primary mb-4 tracking-wider">
+          <h2 className="text-4xl font-bold text-black mb-4 tracking-wider">
             PROCESSOS DE OBRA
           </h2>
-          <div className="w-24 h-1 bg-secondary mx-auto"></div>
         </motion.div>
 
-        <div className="space-y-12">
+        <div className="space-y-16">
           {processes.map((process, index) => (
             <motion.div
               key={process.id}
-              initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: index * 0.2 }}
               viewport={{ once: true }}
+              className="flex items-center gap-8"
             >
-              <Card className={`process-card ${index % 2 === 1 ? 'md:flex-row-reverse' : ''}`}>
-                <div className="flex items-center justify-center md:w-1/3">
-                  <div className="relative">
-                    <img 
-                      src={process.image} 
-                      alt={process.title}
-                      className="w-64 h-48 object-cover rounded-lg"
-                    />
-                    <div className="absolute -top-4 -left-4 w-12 h-12 bg-secondary rounded-full flex items-center justify-center">
-                      <span className="text-secondary-foreground font-bold text-xl">
-                        {process.number}
-                      </span>
-                    </div>
-                  </div>
+              {/* Number */}
+              <div className="flex-shrink-0">
+                <div className="w-16 h-16 bg-black rounded-full flex items-center justify-center">
+                  <span className="text-white font-bold text-2xl">
+                    {process.number}
+                  </span>
                 </div>
-                
-                <div className="md:w-2/3 space-y-4">
-                  <h3 className="text-card-title text-card-foreground">
+              </div>
+
+              {/* Connecting Line */}
+              <div className="flex-grow h-px bg-gray-300 relative">
+                <div className="absolute left-0 top-0 h-full bg-black animate-[scale-in_1s_ease-out] origin-left" 
+                     style={{ width: '100%' }}></div>
+              </div>
+
+              {/* Content */}
+              <div className="flex-shrink-0 w-80">
+                <div className="text-left mb-6">
+                  <h3 className="text-2xl font-bold text-black mb-3">
                     {process.title}
                   </h3>
-                  <p className="text-muted-foreground leading-relaxed">
+                  <p className="text-gray-700 leading-relaxed text-sm">
                     {process.description}
                   </p>
-                  <div className="pt-4">
-                    <motion.div 
-                      className="w-full bg-muted rounded-full h-2"
-                      initial={{ width: 0 }}
-                      whileInView={{ width: '100%' }}
-                      transition={{ duration: 1, delay: 0.5 }}
-                      viewport={{ once: true }}
-                    >
-                      <motion.div 
-                        className="bg-secondary h-2 rounded-full"
-                        initial={{ width: 0 }}
-                        whileInView={{ width: '100%' }}
-                        transition={{ duration: 1.5, delay: 0.8 }}
-                        viewport={{ once: true }}
-                      />
-                    </motion.div>
-                  </div>
                 </div>
-              </Card>
+              </div>
+
+              {/* Image */}
+              <div className="flex-shrink-0">
+                <div className="relative group">
+                  <img 
+                    src={process.image} 
+                    alt={process.title}
+                    className="w-64 h-48 object-cover rounded-lg transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-black/10 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+              </div>
             </motion.div>
           ))}
         </div>
