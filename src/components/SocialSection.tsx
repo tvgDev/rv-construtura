@@ -30,9 +30,10 @@ const SocialSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-construction-light-gray relative overflow-hidden">
+    <section className="py-20 bg-black relative overflow-hidden">
       <div className="container mx-auto px-4">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="bg-white rounded-3xl p-12 lg:p-16">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Mobile Mockup */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -146,6 +147,7 @@ const SocialSection = () => {
               </Button>
             </div>
           </motion.div>
+          </div>
         </div>
       </div>
     </section>
