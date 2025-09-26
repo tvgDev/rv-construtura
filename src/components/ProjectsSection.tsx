@@ -32,7 +32,7 @@ const ProjectsSection = () => {
   ];
 
   return (
-    <section id="trabalhos" className="py-20 bg-primary">
+    <section id="trabalhos" className="py-20 bg-black">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -41,51 +41,50 @@ const ProjectsSection = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-section-title text-primary-foreground mb-4 tracking-wider">
+          <h2 className="text-4xl font-bold text-white mb-4 tracking-wider">
             OBRAS REALIZADAS
           </h2>
-          <div className="w-24 h-1 bg-secondary mx-auto"></div>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
-            <motion.div
-              key={project.id}
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.2 }}
-              viewport={{ once: true }}
-              className="project-card group"
-            >
-              <Card className="bg-transparent border-none overflow-hidden">
-                <div className="relative overflow-hidden">
-                  <img 
-                    src={project.image} 
-                    alt={project.title}
-                    className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-gradient-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  <div className="absolute top-4 left-4">
-                    <span className="bg-secondary text-secondary-foreground px-3 py-1 rounded-full text-sm font-semibold">
-                      {project.category}
-                    </span>
+        <div className="space-y-16">
+          {projects.map((project, index) => {
+            const isEven = index % 2 === 1;
+            return (
+              <motion.div
+                key={project.id}
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.2 }}
+                viewport={{ once: true }}
+                className={`flex flex-col ${isEven ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-center gap-8 lg:gap-16`}
+              >
+                {/* Image Card */}
+                <div className="w-full lg:w-1/2">
+                  <div className="relative group">
+                    <img 
+                      src={project.image} 
+                      alt={project.title}
+                      className="w-full h-80 object-cover rounded-2xl transition-transform duration-500 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-black/20 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   </div>
                 </div>
                 
-                <div className="p-6 bg-card">
-                  <h3 className="text-card-title text-card-foreground mb-3">
+                {/* Content */}
+                <div className="w-full lg:w-1/2 text-white">
+                  <h3 className="text-3xl font-bold mb-6">
                     {project.title}
                   </h3>
-                  <p className="text-muted-foreground mb-6 leading-relaxed">
+                  <p className="text-gray-300 mb-8 leading-relaxed text-lg">
                     {project.description}
                   </p>
-                  <Button className="btn-outline-gold w-full">
+                  <Button className="bg-white text-black hover:bg-gray-200 px-8 py-3 rounded-full font-semibold">
                     VER MAIS
                   </Button>
                 </div>
-              </Card>
-            </motion.div>
-          ))}
+              </motion.div>
+            );
+          })}
         </div>
       </div>
     </section>
