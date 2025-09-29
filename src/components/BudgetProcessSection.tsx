@@ -27,7 +27,7 @@ const BudgetProcessSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-background">
+    <section className="py-20 bg-black text-white">
       <div className="container mx-auto px-4">
         {/* Process Cards */}
         <div className="grid md:grid-cols-3 gap-6 mb-16">
