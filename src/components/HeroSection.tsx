@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
-import logo3D from '@/assets/logo-3d.jpg';
+import logo3D from '@/assets/3D 4.png';
 
 const HeroSection = () => {
   return (

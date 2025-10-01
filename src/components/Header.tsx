@@ -25,13 +25,20 @@ const Header = () => {
       <div className="container mx-auto px-6 py-6">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <motion.div 
+          <motion.div
             whileHover={{ scale: 1.05 }}
             className="flex items-center space-x-3"
           >
-            <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
-              <span className="text-black font-bold text-xl">RV</span>
-            </div>
+            {/* Imagem da logo */}
+            <img
+              src="src/assets/logo_nova.png" // ATENÇÃO: SUBSTITUA COM O CAMINHO CORRETO DA SUA IMAGEM
+              alt="Logo Demolição"
+              className="w-12 h-12" // Ajuste o tamanho conforme necessário
+            />
+            {/* Texto "DEMOLIÇÃO" */}
+            <span className="text-white font-thin text-2xl tracking-wide">
+              DEMOLIÇÃO
+            </span>
           </motion.div>
 
           {/* Desktop Navigation - Centralizado */}
