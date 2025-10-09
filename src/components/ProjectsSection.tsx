@@ -1,58 +1,70 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
 import project1 from "@/assets/project-1.jpg";
 import project2 from "@/assets/project-2.jpg";
 import project3 from "@/assets/project-3.jpg";
+import excavator from "@/assets/3D 3.png";
+import excavator2 from "@/assets/3D 1.png";
 
 const ProjectsSection = () => {
   const projects = [
     {
       id: 1,
-      title: "HOME DA OBRA",
+      title: "NOME DA OBRA",
       description:
-        "Construção de edifício residencial de alto padrão com tecnologia sustentável e acabamentos premium. Projeto completo desde fundação até entrega das chaves.",
+        "Especialistas em demolição e construção civil. Trabalhamos com segurança, agilidade e qualidade para transformar seu projeto em realidade.",
       image: project1,
-      category: "RESIDENCIAL",
     },
     {
       id: 2,
-      title: "HOME DA OBRA",
+      title: "NOME DA OBRA",
       description:
-        "Desenvolvimento de infraestrutura industrial com equipamentos pesados e sistemas automatizados. Execução de terraplanagem e instalações especializadas.",
+        "Especialistas em demolição e construção civil. Trabalhamos com segurança, agilidade e qualidade para transformar seu projeto em realidade.",
       image: project2,
-      category: "INDUSTRIAL",
     },
     {
       id: 3,
-      title: "HOME DA OBRA",
+      title: "NOME DA OBRA",
       description:
-        "Projeto de escritório corporativo moderno com design inovador, espaços colaborativos e tecnologia integrada para máxima produtividade.",
+        "Especialistas em demolição e construção civil. Trabalhamos com segurança, agilidade e qualidade para transformar seu projeto em realidade.",
       image: project3,
-      category: "COMERCIAL",
     },
   ];
 
   return (
     <section
       id="trabalhos"
-      className="py-20 bg-gradient-to-t from-black via-neutral-950 to-neutral-900"
+      className="relative py-10 sm:py-14 md:py-16 lg:py-20 xl:py-24 bg-gradient-to-t from-black via-neutral-950 to-neutral-900 overflow-hidden"
     >
-      <div className="container mx-auto px-4">
+      {/* IMAGENS FIXAS DECORATIVAS */}
+      <img
+        src={excavator}
+        alt=""
+        className="absolute top-10 right-[-70px] w-[400px] md:w-[500px] lg:w-[600px] xl:w-[700px] opacity-90 pointer-events-none z-0 hidden lg:block"
+      />
+      <img
+        src={excavator2}
+        alt=""
+        className="absolute top-96 left-[-70px] w-[350px] md:w-[400px] lg:w-[500px] xl:w-[600px] opacity-90 pointer-events-none z-0 hidden lg:block"
+      />
+
+      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
+        {/* Título */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-8 sm:mb-10 md:mb-12 lg:mb-16 xl:mb-20"
         >
-          <h2 className="text-4xl font-bold text-white mb-4 tracking-wider">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extralight text-white tracking-[0.15rem] sm:tracking-[0.25rem] md:tracking-[0.35rem] lg:tracking-[0.45rem] xl:tracking-[0.5rem]">
             OBRAS REALIZADAS
           </h2>
         </motion.div>
 
-        <div className="space-y-16">
+        {/* Lista de Projetos */}
+        <div className="space-y-8 sm:space-y-10 md:space-y-12 lg:space-y-14 xl:space-y-16">
           {projects.map((project, index) => {
             const isEven = index % 2 === 1;
             return (
@@ -64,27 +76,30 @@ const ProjectsSection = () => {
                 viewport={{ once: true }}
                 className={`flex flex-col ${
                   isEven ? "lg:flex-row-reverse" : "lg:flex-row"
-                } items-center gap-8 lg:gap-16`}
+                } items-center justify-center gap-6 sm:gap-8 md:gap-10 lg:gap-12 xl:gap-16 ${isEven ? 'md:ml-12 lg:ml-20 xl:ml-32 2xl:ml-96' : 'md:mr-12 lg:mr-20 xl:mr-32 2xl:mr-96'}`}
               >
-                {/* Image Card */}
-                <div className="w-full lg:w-1/2">
-                  <div className="relative group">
-                    <img
-                      src={project.image}
-                      alt={project.title}
-                      className="w-full h-80 object-cover rounded-2xl transition-transform duration-500 group-hover:scale-105"
-                    />
-                    <div className="absolute inset-0 bg-black/20 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  </div>
+                {/* Imagem */}
+                <div
+                  className={`w-full lg:w-1/2 flex justify-center ${
+                    isEven ? "lg:justify-start" : "lg:justify-end"
+                  }`}
+                >
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="rounded-[15px] sm:rounded-[18px] md:rounded-[20px] lg:rounded-[25px] border-[3px] sm:border-[4px] md:border-[5px] lg:border-[6px] border-white shadow-[0_4px_20px_rgba(0,0,0,0.5)] object-cover w-[260px] h-[260px] sm:w-[300px] sm:h-[300px] md:w-[320px] md:h-[320px] lg:w-[350px] lg:h-[350px] xl:w-[380px] xl:h-[380px]"
+                  />
                 </div>
 
-                {/* Content */}
-                <div className="w-full lg:w-1/2 text-white">
-                  <h3 className="text-3xl font-bold mb-6">{project.title}</h3>
-                  <p className="text-gray-300 mb-8 leading-relaxed text-lg">
+                {/* Conteúdo */}
+                <div className="w-full lg:w-1/2 text-center lg:text-left max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl lg:pl-4 xl:pl-6 px-4 sm:px-0">
+                  <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-extrabold uppercase text-white tracking-[0.08rem] sm:tracking-[0.12rem] md:tracking-[0.15rem] lg:tracking-[0.18rem] xl:tracking-[0.2rem]">
+                    {project.title}
+                  </h2>
+                  <p className="text-gray-300 mt-3 sm:mt-4 md:mt-5 lg:mt-6 leading-relaxed tracking-wide sm:tracking-wider text-sm sm:text-base md:text-lg lg:text-xl">
                     {project.description}
                   </p>
-                  <Button className="bg-white text-black hover:bg-gray-200 px-8 py-3 rounded-full font-semibold">
+                  <Button className="mt-4 sm:mt-5 md:mt-6 lg:mt-8 bg-white text-black font-extrabold py-2 sm:py-3 md:py-3 lg:py-4 px-6 sm:px-8 md:px-10 lg:px-12 rounded-full shadow-md hover:bg-gray-200 transition text-sm sm:text-base md:text-lg lg:text-xl">
                     VER MAIS
                   </Button>
                 </div>
