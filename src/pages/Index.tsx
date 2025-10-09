@@ -19,20 +19,20 @@ const Index = () => {
           <ProjectsSection />
         </section>
 
-        {/* <div className="bg-black relative">
+        <div className="bg-black relative">
           <div className="bg-white transform -skew-y-3 -translate-y-4">
             <section className="py-20 skew-y-3">
               <ProcessSection />
             </section>
           </div>
-        </div> */}
+        </div>
 
-        {/* <TestimonialsSection />
+        <TestimonialsSection />
         <SocialSection />
         <BudgetProcessSection />
-        <ContactSection /> */}
+        <ContactSection />
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };

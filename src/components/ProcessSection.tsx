@@ -61,11 +61,11 @@ const ProcessSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: index * 0.2 }}
               viewport={{ once: true }}
-              className="flex items-center gap-8"
+              className="flex flex-col lg:flex-row items-center gap-8"
             >
               {/* Number and Content */}
-              <div className="flex items-start gap-4 flex-shrink-0">
-                <div className="w-16 h-16 bg-black rounded-full flex items-center justify-center flex-shrink-0">
+              <div className="flex items-start gap-4 flex-shrink-0 order-2 lg:order-none">
+                <div className="w-16 h-16 bg-black rounded-full flex items-center justify-center flex-shrink-0 hidden lg:flex">
                   <span className="text-white font-bold text-2xl">
                     {process.number}
                   </span>
@@ -81,13 +81,13 @@ const ProcessSection = () => {
               </div>
 
               {/* Connecting Line */}
-              <div className="flex-grow h-px bg-gray-300 relative">
+              <div className="flex-grow h-px bg-gray-300 relative hidden lg:flex">
                 <div className="absolute left-0 top-0 h-full bg-black animate-[scale-in_1s_ease-out] origin-left" 
                      style={{ width: '100%' }}></div>
               </div>
 
               {/* Image */}
-              <div className="flex-shrink-0">
+              <div className="flex-shrink-0 order-1 lg:order-none">
                 <div className="relative group">
                   <img 
                     src={process.image} 
