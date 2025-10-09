@@ -1,8 +1,14 @@
 import type { Config } from "tailwindcss";
+import tailwindcssAnimate from "tailwindcss-animate";
 
 export default {
   darkMode: ["class"],
-  content: ["./pages/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}", "./app/**/*.{ts,tsx}", "./src/**/*.{ts,tsx}"],
+  content: [
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+  ],
   prefix: "",
   theme: {
     container: {
@@ -13,6 +19,10 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        title: ['"Bebas Neue"', "sans-serif"],
+        sans: ['"Nunito Sans"', "sans-serif"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -94,7 +104,7 @@ export default {
         "fade-in-up": "fadeInUp 0.6s ease-out",
         "fade-in-left": "fadeInLeft 0.6s ease-out",
         "fade-in-right": "fadeInRight 0.6s ease-out",
-        "float": "float 3s ease-in-out infinite",
+        float: "float 3s ease-in-out infinite",
       },
       backgroundImage: {
         "gradient-hero": "var(--gradient-hero)",
@@ -102,11 +112,11 @@ export default {
         "gradient-overlay": "var(--gradient-overlay)",
       },
       boxShadow: {
-        "gold": "var(--shadow-gold)",
-        "card": "var(--shadow-card)",
-        "hero": "var(--shadow-hero)",
+        gold: "var(--shadow-gold)",
+        card: "var(--shadow-card)",
+        hero: "var(--shadow-hero)",
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [tailwindcssAnimate],
 } satisfies Config;
