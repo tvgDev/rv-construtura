@@ -46,7 +46,7 @@ const ProcessSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-center lg:text-left mb-16"
+          className="text-center text-left mb-16"
         >
           <h2 className="text-3xl lg:text-4xl text-black mb-4 tracking-widest font-transducerLight font-light">
             PROCESSOS DE OBRA
@@ -70,7 +70,7 @@ const ProcessSection = () => {
                     {process.number}
                   </span>
                 </div>
-                <div className="max-w-sm text-center lg:text-left">
+                <div className="max-w-sm text-center lg:text-left lg:mr-8">
                   <h3 className="text-xl lg:text-2xl font-bold text-black mb-3 font-transducer lg:whitespace-nowrap">
                     {process.title}
                   </h3>
