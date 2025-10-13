@@ -11,15 +11,15 @@ import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-neutral-800 text-white">
       <Header />
       <main>
         <HeroSection />
-        <section className="bg-black text-white">
+        <section className=" text-white">
           <ProjectsSection />
         </section>
 
-        <div className="bg-black relative">
+        <div className="bg-gradient-to-t from-neutral-800 via-neutral-900 to-black relative">
           <div className="bg-white transform -skew-y-3 -translate-y-4">
             <section className="py-20 skew-y-3">
               <ProcessSection />
