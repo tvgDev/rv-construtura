@@ -22,6 +22,9 @@ export default {
       fontFamily: {
         title: ['"Bebas Neue"', "sans-serif"],
         sans: ['"Nunito Sans"', "sans-serif"],
+        transducer: ['Transducer', 'sans-serif'],
+        transducerLight: ['Transducer-Light', 'sans-serif'],
+        montserrat: ['Montserrat', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
