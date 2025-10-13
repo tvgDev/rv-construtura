@@ -32,7 +32,7 @@ const SocialSection = () => {
   return (
     <section className="py-20 bg-black relative overflow-hidden">
       <div className="container mx-auto px-4">
-        <div className="bg-white rounded-3xl p-12 lg:p-16">
+        <div className="bg-[url(./src/assets/40501867_mhk_2.jpg)] bg-no-repeat bg-cover bg-center rounded-3xl p-12 lg:p-16">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Mobile Mockup */}
           <motion.div

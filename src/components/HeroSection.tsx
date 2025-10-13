@@ -7,8 +7,8 @@ const HeroSection = () => {
       id="inicio"
       className="min-h-screen bg-gradient-to-t to-black via-neutral-950 from-neutral-900 flex items-center justify-center relative overflow-hidden pt-16 sm:pt-18 md:pt-20 lg:pt-24"
     >
-      <div className="w-full bg-white bg-[url(./src/assets/background.jpg)] bg-no-repeat bg-cover bg-center rounded-[2rem] sm:rounded-[3rem] lg:rounded-[4rem] min-h-[calc(100vh-4rem)] sm:min-h-[calc(100vh-5rem)] lg:min-h-[calc(100vh-6rem)] flex items-center relative">
-        <div className="absolute inset-0 bg-white/70 rounded-[2rem] sm:rounded-[3rem] lg:rounded-[4rem]"></div>
+      <div className="w-full bg-[url(./src/assets/40501867_mhk_2.jpg)] bg-no-repeat bg-cover bg-center rounded-[2rem] sm:rounded-[3rem] lg:rounded-[4rem] min-h-[calc(100vh-4rem)] sm:min-h-[calc(100vh-5rem)] lg:min-h-[calc(100vh-6rem)] flex items-center relative">
+        <div className="absolute inset-0 rounded-[2rem] sm:rounded-[3rem] lg:rounded-[4rem]"></div>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-10 md:py-12 lg:py-16 relative z-10">
           <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 xl:gap-16 items-center">
             <div className="animate-fade-in-up text-center lg:text-left space-y-4 sm:space-y-5 lg:space-y-6">

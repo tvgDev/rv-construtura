@@ -20,7 +20,7 @@ const Index = () => {
         </section>
 
         <div className="bg-gradient-to-t from-neutral-800 via-neutral-900 to-black relative">
-          <div className="bg-white transform -skew-y-3 -translate-y-4">
+          <div className="bg-[url(./src/assets/40501867_mhk_2.jpg)] bg-no-repeat bg-cover bg-center transform -skew-y-3 -translate-y-4">
             <section className="py-20 skew-y-3">
               <ProcessSection />
             </section>

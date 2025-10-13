@@ -6,7 +6,7 @@ import { Play, Phone, Mail, MapPin } from 'lucide-react';
 
 const ContactSection = () => {
   return (
-    <section id="contatos" className="py-20 bg-construction-light-gray">
+    <section id="contatos" className="py-20 bg-neutral-950 bg-[url(./src/assets/40501867_mhk_2.jpg)] bg-no-repeat bg-cover bg-center">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Video Section */}
