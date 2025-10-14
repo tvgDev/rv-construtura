@@ -8,7 +8,7 @@ import phoneImage from '@/assets/Celular 3D.png';
 const SocialSection = () => {
 
   return (
-    <section className="py-16 sm:py-20 md:py-24 bg-black relative">
+    <section className="py-16 sm:py-20 md:py-24 relative">
   {/* 2. A <div> vira o QUADRO: imagem de fundo e cantos arredondados. */}
   <div className="bg-[url(./src/assets/40501867_mhk_2.jpg)] bg-no-repeat bg-cover bg-center rounded-[2rem] sm:rounded-[3rem] lg:rounded-[4rem]">
     {/* 3. O container e o grid continuam dentro, para alinhar o conteúdo. */}

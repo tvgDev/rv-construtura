@@ -1,12 +1,12 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Button } from '@/components/ui/button';
-import { Card } from '@/components/ui/card';
-import { Play, Phone, Mail, MapPin } from 'lucide-react';
+import React from "react";
+import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import { Play, Phone, Mail, MapPin } from "lucide-react";
 
 const ContactSection = () => {
   return (
-    <section id="contatos" className="py-20 bg-neutral-950 bg-[url(./src/assets/40501867_mhk_2.jpg)] bg-no-repeat bg-cover bg-center">
+    <section id="contatos" className="py-20">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Video Section */}
@@ -20,7 +20,7 @@ const ContactSection = () => {
             <div className="relative aspect-video bg-primary rounded-2xl overflow-hidden group cursor-pointer">
               {/* Video Thumbnail/Background */}
               <div className="absolute inset-0 bg-gradient-to-br from-primary via-construction-gray to-primary opacity-90"></div>
-              
+
               {/* Play Button */}
               <div className="absolute inset-0 flex items-center justify-center">
                 <motion.div
@@ -28,7 +28,10 @@ const ContactSection = () => {
                   whileTap={{ scale: 0.95 }}
                   className="w-20 h-20 bg-secondary rounded-full flex items-center justify-center shadow-2xl group-hover:shadow-gold transition-all duration-300"
                 >
-                  <Play className="w-10 h-10 text-secondary-foreground ml-1" fill="currentColor" />
+                  <Play
+                    className="w-10 h-10 text-secondary-foreground ml-1"
+                    fill="currentColor"
+                  />
                 </motion.div>
               </div>
 
@@ -39,7 +42,8 @@ const ContactSection = () => {
                     CONHEÇA NOSSA EMPRESA
                   </h4>
                   <p className="text-primary-foreground/80 text-sm">
-                    Assista ao vídeo e conheça nossa história, nossos valores e como transformamos sonhos em realidade.
+                    Assista ao vídeo e conheça nossa história, nossos valores e
+                    como transformamos sonhos em realidade.
                   </p>
                 </div>
               </div>
@@ -54,67 +58,26 @@ const ContactSection = () => {
             viewport={{ once: true }}
             className="space-y-8"
           >
-            <div>
-              <h2 className="text-section-title text-primary mb-4">
+            <div className="text-center lg:text-left">
+              <h2 className="text-section-title text-primary mb-4 text-white">
                 NOS CONHEÇA
               </h2>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                Estamos prontos para transformar seu projeto em realidade. Entre em contato conosco e 
-                descubra como podemos ajudar a construir o futuro que você imagina.
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6 text-amber-200">
+                Estamos prontos para transformar seu projeto em realidade. Entre
+                em contato conosco e descubra como podemos ajudar a construir o
+                futuro que você imagina.
               </p>
+              <div className="flex text-center lg:text-left items-center justify-center lg:justify-start">
+                <img
+                  src="src/assets/logo_nova.png"
+                  alt="Logo Demolição"
+                  className="w-14 h-14 sm:w-14 sm:h-14 md:w-18 md:h-18 object-contain flex-shrink-0"
+                />
+                <span className="text-white font-thin text-xl sm:text-base md:text-lg lg:text-xl xl:text-2xl tracking-[0.1rem] sm:tracking-[0.15rem] md:tracking-[0.3rem] lg:tracking-[0.5rem] xl:tracking-[0.6rem] truncate ml-2 mt-1">
+                  DEMOLIÇÃO
+                </span>
+              </div>
             </div>
-
-            {/* Contact Cards */}
-            <div className="space-y-4">
-              <motion.div whileHover={{ x: 10 }}>
-                <Card className="p-6 border border-border hover:border-secondary transition-colors duration-300">
-                  <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center">
-                      <Phone className="w-6 h-6 text-secondary-foreground" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-card-foreground">TELEFONE</h4>
-                      <p className="text-muted-foreground">(11) 99999-9999</p>
-                    </div>
-                  </div>
-                </Card>
-              </motion.div>
-
-              <motion.div whileHover={{ x: 10 }}>
-                <Card className="p-6 border border-border hover:border-secondary transition-colors duration-300">
-                  <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center">
-                      <Mail className="w-6 h-6 text-secondary-foreground" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-card-foreground">E-MAIL</h4>
-                      <p className="text-muted-foreground">contato@rvconstrucoes.com.br</p>
-                    </div>
-                  </div>
-                </Card>
-              </motion.div>
-
-              <motion.div whileHover={{ x: 10 }}>
-                <Card className="p-6 border border-border hover:border-secondary transition-colors duration-300">
-                  <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center">
-                      <MapPin className="w-6 h-6 text-secondary-foreground" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-card-foreground">ENDEREÇO</h4>
-                      <p className="text-muted-foreground">São Paulo, SP - Brasil</p>
-                    </div>
-                  </div>
-                </Card>
-              </motion.div>
-            </div>
-
-            {/* WhatsApp Button */}
-            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-              <Button className="w-full bg-green-500 hover:bg-green-600 text-white py-4 text-lg font-semibold rounded-xl">
-                💬 FALAR NO WHATSAPP
-              </Button>
-            </motion.div>
           </motion.div>
         </div>
       </div>

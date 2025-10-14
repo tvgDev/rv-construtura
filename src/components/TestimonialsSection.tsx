@@ -39,7 +39,7 @@ const TestimonialsSection = () => {
   return (
     <section
       id="depoimentos"
-      className="py-20 bg-gradient-to-t from-black via-neutral-900 to-neutral-800 overflow-hidden"
+      className="py-20 overflow-hidden"
     >
       <div className="container mx-auto px-4">
         <motion.div
