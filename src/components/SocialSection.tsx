@@ -58,10 +58,10 @@ const SocialSection = () => {
     rel="noopener noreferrer"
     className="inline-flex items-center rounded-full overflow-hidden shadow-sm hover:opacity-90 transition bg-black"
   >
-    <span className="font-sans bg-[#F2C775] text-black px-4 py-2 text-sm font-montserrat tracking-[0.2em] rounded-xl">
+    <span className="font-sans bg-yellow-400 text-black px-4 py-2 text-sm font-semibold rounded-xl">
       acesse:
     </span>
-    <span className="font-sans text-white px-5 py-2 text-sm font-montserrat tracking-[0.2em]">
+    <span className="font-sans text-white px-5 py-2 text-sm font-semibold">
       Click aqui
     </span>
   </a>

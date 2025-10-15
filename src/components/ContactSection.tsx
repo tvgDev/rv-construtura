@@ -15,7 +15,7 @@ const ContactSection = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="relative border-2 border-[#e6c883] rounded-3xl overflow-hidden shadow-[0_0_35px_0.2px_rgba(255,255,255,0.5)]"
+            className="relative"
           >
             <div className="relative aspect-video bg-primary rounded-2xl overflow-hidden group cursor-pointer">
               {/* Video Thumbnail/Background */}
