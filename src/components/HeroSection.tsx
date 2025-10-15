@@ -1,5 +1,8 @@
 import { Button } from "@/components/ui/button";
 import logo3D from "@/assets/3D 4.png";
+import youtubeLogo from '@/assets/youtube.svg';
+import tiktokLogo from '@/assets/tiktok.svg';
+import instagramLogo from '@/assets/instagram.svg';
 
 const HeroSection = () => {
   return (
@@ -13,7 +16,7 @@ const HeroSection = () => {
           <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 xl:gap-16 items-center">
             <div className="animate-fade-in-up text-center lg:text-left space-y-4 sm:space-y-5 lg:space-y-6">
               <a
-                href="https://instagram.com/lrdemolicao"
+                href="https://www.instagram.com/lr.demolicao/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center rounded-full overflow-hidden shadow-sm hover:opacity-90 transition bg-black"
@@ -23,11 +26,11 @@ const HeroSection = () => {
                 </span>
 
                 <span className="text-white px-3 sm:px-4 md:px-5 py-1 text-xs sm:text-sm md:text-base font-medium">
-                  @lrdemolição no instagram
+                  @lr.demolição no instagram
                 </span>
               </a>
 
-              <h1 className="font-title text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-bold bg-gradient-to-r from-neutral-950 via-neutral-800 bg-clip-text text-transparent leading-tight">
+              <h1 className="font-transducerBlack text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-8xl font-bold bg-gradient-to-r from-neutral-950 via-neutral-800 bg-clip-text text-transparent leading-tight">
                 QUEM SOMOS
               </h1>
 
@@ -47,6 +50,30 @@ const HeroSection = () => {
                   ▼
                 </span>
               </button>
+
+              <div className="absolute -bottom-12 lg:-bottom-2 inset-x-0 flex items-center justify-center gap-6 lg:justify-start lg:inset-x-auto lg:left-8">
+                <a href="https://www.youtube.com/@LRDemoli%C3%A7%C3%A3o" target="_blank" rel="noopener noreferrer">
+                  <img
+                    src={youtubeLogo}
+                    alt="YouTube"
+                    className="w-6 h-6 hover:opacity-75 transition-opacity"
+                  />
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <img
+                    src={tiktokLogo}
+                    alt="TikTok"
+                    className="w-6 h-6 hover:opacity-75 transition-opacity"
+                  />
+                </a>
+                <a href="https://www.instagram.com/lr.demolicao/" target="_blank" rel="noopener noreferrer">
+                  <img
+                    src={instagramLogo}
+                    alt="Instagram"
+                    className="w-6 h-6 hover:opacity-75 transition-opacity"
+                  />
+                </a>
+              </div>
             </div>
 
             {/* 3D Logo */}

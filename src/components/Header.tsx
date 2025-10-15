@@ -19,7 +19,7 @@ const Header = () => {
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className="fixed top-0 left-0 right-0 z-50 bg-black shadow-lg"
+      className="fixed top-0 left-0 right-0 z-50 bg-black shadow-lg font-montserrat font-black"
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-2 sm:py-3 lg:py-4">
         <div className="flex items-center justify-between">

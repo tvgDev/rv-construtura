@@ -99,15 +99,15 @@ const CtaSection = () => {
         >
           <Button
             asChild
-            className="bg-green-500 text-white font-bold text-lg py-8 px-10 rounded-full hover:bg-green-600 transition-transform hover:scale-105"
+            className="bg-green-500 text-white font-bold text-sm lg:text-lg py-4 px-6 lg:py-8 lg:px-10 rounded-full hover:bg-green-600 transition-transform hover:scale-105"
           >
             <a
               href="https://wa.me/SEUNUMERO"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={whatsAppLogo} alt="WhatsApp" className="mr-2 h-8 w-8" />
-              <div className="text-2xl tracking-[0.3em] font-montserrat">entre em contato</div>
+              <img src={whatsAppLogo} alt="WhatsApp" className="mr-2 h-6 w-6 lg:h-8 lg:w-8" />
+              <div className="text-base lg:text-2xl tracking-[0.3em] font-montserrat">entre em contato</div>
             </a>
           </Button>
         </motion.div>

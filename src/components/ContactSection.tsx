@@ -50,7 +50,7 @@ const ContactSection = () => {
               <h2 className="text-section-title text-primary text-8xl tracking-normal mb-4 text-white font-transducerBlack">
                 NOS CONHEÇA
               </h2>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-6 text-[#e6c883] tracking-widest font-montserrat font-bold">
+              <p className="text-lg leading-relaxed mb-6 text-[#e6c883] tracking-widest font-montserrat font-bold">
                 Especialistas em demolição e construção civil. Trabalhamos com
                 segurança, agilidade e qualidade para transformar seu projeto em
                 realidade.
