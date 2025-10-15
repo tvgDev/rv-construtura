@@ -30,7 +30,7 @@ const HeroSection = () => {
                 </span>
               </a>
 
-              <h1 className="font-transducerBlack text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-8xl font-bold bg-gradient-to-r from-neutral-950 via-neutral-800 bg-clip-text text-transparent leading-tight">
+              <h1 className="font-transducerBlack text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-8xl font-bold bg-gradient-to-r from-neutral-950 via-neutral-800 bg-clip-text text-transparent leading-tight">
                 QUEM SOMOS
               </h1>
 
@@ -82,7 +82,7 @@ const HeroSection = () => {
                 <img
                   src={logo3D}
                   alt="Logo 3D RV Construções"
-                  className="w-[180px] sm:w-[250px] md:w-[300px] lg:w-[350px] xl:w-[400px] 2xl:w-[500px] object-contain drop-shadow-2xl"
+                  className="w-[300px] sm:w-[250px] md:w-[300px] lg:w-[350px] xl:w-[400px] 2xl:w-[700px] object-contain drop-shadow-2xl"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-transparent to-white/20 rounded-full"></div>
               </div>

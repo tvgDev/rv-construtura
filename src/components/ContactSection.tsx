@@ -11,8 +11,8 @@ const ContactSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Video Section */}
           <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
             className="relative border-2 border-[#e6c883] rounded-3xl overflow-hidden shadow-[0_0_35px_0.2px_rgba(255,255,255,0.5)]"
@@ -40,8 +40,8 @@ const ContactSection = () => {
 
           {/* Contact Info */}
           <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
             className="space-y-8"
