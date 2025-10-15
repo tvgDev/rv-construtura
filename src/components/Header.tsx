@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import novaLogo from '@/assets/logo_nova.png';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,7 +26,7 @@ const Header = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center min-w-0 flex-1">
             <img
-              src="src/assets/logo_nova.png"
+              src={novaLogo}
               alt="Logo Demolição"
               className="w-8 h-8 sm:w-10 sm:h-10 md:w-14 md:h-14 object-contain flex-shrink-0"
             />

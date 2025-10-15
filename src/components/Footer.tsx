@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Instagram, Facebook, Linkedin, Youtube, Mail, Phone, MapPin } from 'lucide-react';
 import tiktoklogoWhite from '@/assets/tiktok-white.png';
+import novaLogo from '@/assets/logo_nova.png';
 
 const Footer = () => {
   return (
@@ -18,7 +19,7 @@ const Footer = () => {
             <div className="flex items-center space-x-2 mb-4">
               <div className="w-10 h-10 rounded-full flex items-center justify-center">
                 <img
-                  src="src/assets/logo_nova.png"
+                  src= {novaLogo}
                   alt="Logo Demolição"
                   className="w-14 h-14 sm:w-14 sm:h-14 md:w-18 md:h-18 object-contain flex-shrink-0"
                 />

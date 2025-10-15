@@ -3,6 +3,7 @@ import logo3D from "@/assets/3D 4.png";
 import youtubeLogo from '@/assets/youtube.svg';
 import tiktokLogo from '@/assets/tiktok.svg';
 import instagramLogo from '@/assets/instagram.svg';
+import backgroundImage from '@/assets/40501867_mhk_2.jpg';
 
 const HeroSection = () => {
   return (
