@@ -76,7 +76,11 @@ const ProjectsSection = () => {
                 viewport={{ once: true }}
                 className={`flex flex-col ${
                   isEven ? "lg:flex-row-reverse" : "lg:flex-row"
-                } items-center justify-center gap-6 sm:gap-8 md:gap-10 lg:gap-12 xl:gap-16 ${isEven ? 'md:ml-12 lg:ml-20 xl:ml-32 2xl:ml-96' : 'md:mr-12 lg:mr-20 xl:mr-32 2xl:mr-96'}`}
+                } items-center justify-center gap-6 sm:gap-8 md:gap-10 lg:gap-12 xl:gap-16 ${
+                  isEven
+                    ? "md:ml-12 lg:ml-20 xl:ml-32 2xl:ml-96"
+                    : "md:mr-12 lg:mr-20 xl:mr-32 2xl:mr-96"
+                }`}
               >
                 {/* Imagem */}
                 <div
