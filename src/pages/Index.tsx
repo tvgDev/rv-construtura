@@ -27,7 +27,7 @@ const Index = () => {
           </div>
         </section>
 
-        <div className="bg-[url(./src/assets/Background-black.jpg)] bg-cover bg-center transform -skew-y-3 -translate-y-4">
+        <div className="bg-[url(./src/assets/Background-blackV2.png)] bg-cover bg-center transform -skew-y-3 -translate-y-4">
           <section className="py-20 skew-y-3">
             <TestimonialsSection />
             <SocialSection />
