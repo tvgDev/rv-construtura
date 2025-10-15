@@ -54,7 +54,7 @@ const HeroSection = () => {
                 </span>
               </button>
 
-              <div className="absolute -bottom-12 lg:-bottom-2 inset-x-0 flex items-center justify-center gap-6 lg:justify-start lg:inset-x-auto lg:left-8">
+              <div className="absolute -bottom-8 lg:-bottom-2 inset-x-0 flex items-center justify-center gap-6 lg:justify-start lg:inset-x-auto lg:left-8">
                 <a href="https://www.youtube.com/@LRDemoli%C3%A7%C3%A3o" target="_blank" rel="noopener noreferrer">
                   <img
                     src={youtubeLogo}
