@@ -15,10 +15,14 @@ const Footer = () => {
             viewport={{ once: true }}
           >
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-secondary rounded-full flex items-center justify-center">
-                <span className="text-secondary-foreground font-bold text-lg">RV</span>
+              <div className="w-10 h-10 rounded-full flex items-center justify-center">
+                <img
+                  src="src/assets/logo_nova.png"
+                  alt="Logo Demolição"
+                  className="w-14 h-14 sm:w-14 sm:h-14 md:w-18 md:h-18 object-contain flex-shrink-0"
+                />
               </div>
-              <span className="font-bold text-xl">CONSTRUÇÕES</span>
+              <span className="text-xl font-Transducer tracking-[0.3rem]">DEMOLIÇÃO</span>
             </div>
             <p className="text-primary-foreground/80 leading-relaxed">
               Transformando sonhos em realidade através de construções de qualidade superior, 
@@ -75,7 +79,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-4 h-4 text-secondary" />
-                <span>contato@rvconstrucoes.com.br</span>
+                <span>contato@lrdemolicao.com.br</span>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="w-4 h-4 text-secondary" />
