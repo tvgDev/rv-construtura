@@ -27,16 +27,18 @@ const Index = () => {
           </div>
         </section>
 
-        <div className="bg-[url(./src/assets/Background-blackV2.png)] bg-cover bg-center transform -skew-y-3 -translate-y-4">
-          <section className="py-20 skew-y-3">
+        <div className="bg-[url(./src/assets/Background-black.jpg)] bg-cover bg-center transform -skew-y-3 -translate-y-4">
+          <div className="py-20 skew-y-3">
             <TestimonialsSection />
             <SocialSection />
             <BudgetProcessSection />
             <ContactSection />
-          </section>
+          </div>
         </div>
       </main>
-      <Footer />
+      <div className="relative z-20 -mt-12">
+        <Footer />
+      </div>
     </div>
   );
 };
