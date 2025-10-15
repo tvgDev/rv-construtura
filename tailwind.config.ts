@@ -85,6 +85,10 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       keyframes: {
+        jump: {
+      '0%, 100%': { transform: 'translateY(0)' },
+      '50%': { transform: 'translateY(-6px)' }, // Altura do pulo
+    },
         "accordion-down": {
           from: {
             height: "0",
@@ -109,6 +113,7 @@ export default {
         "fade-in-left": "fadeInLeft 0.6s ease-out",
         "fade-in-right": "fadeInRight 0.6s ease-out",
         float: "float 3s ease-in-out infinite",
+        jump: 'jump 0.5s ease-in-out',
       },
       backgroundImage: {
         "gradient-hero": "var(--gradient-hero)",

@@ -82,7 +82,7 @@ const HeroSection = () => {
                 <img
                   src={logo3D}
                   alt="Logo 3D RV Construções"
-                  className="w-[300px] sm:w-[250px] md:w-[300px] lg:w-[350px] xl:w-[400px] 2xl:w-[700px] object-contain drop-shadow-2xl"
+                  className="w-[300px] sm:w-[250px] md:w-[300px] lg:w-[350px] xl:w-[400px] 2xl:w-[700px] object-contain"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-transparent to-white/20 rounded-full"></div>
               </div>
