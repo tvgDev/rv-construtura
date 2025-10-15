@@ -58,7 +58,7 @@ const ProjectsSection = () => {
           viewport={{ once: true }}
           className="text-center mb-8 sm:mb-10 md:mb-12 lg:mb-16 xl:mb-20"
         >
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extralight text-white tracking-[0.15rem] sm:tracking-[0.25rem] md:tracking-[0.35rem] lg:tracking-[0.45rem] xl:tracking-[0.5rem]">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extralight text-white tracking-[0.15rem] sm:tracking-[0.25rem] md:tracking-[0.35rem] lg:tracking-[0.45rem] xl:tracking-[0.5rem] font-transducerLight">
             OBRAS REALIZADAS
           </h2>
         </motion.div>
@@ -93,13 +93,13 @@ const ProjectsSection = () => {
 
                 {/* Conteúdo */}
                 <div className="w-full lg:w-1/2 text-center lg:text-left max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl lg:pl-4 xl:pl-6 px-4 sm:px-0">
-                  <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-extrabold uppercase text-white tracking-[0.08rem] sm:tracking-[0.12rem] md:tracking-[0.15rem] lg:tracking-[0.18rem] xl:tracking-[0.2rem]">
+                  <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-extrabold uppercase text-white tracking-[0.08rem] sm:tracking-[0.12rem] md:tracking-[0.15rem] lg:tracking-[0.18rem] xl:tracking-[0.2rem] font-transducerBlack">
                     {project.title}
                   </h2>
-                  <p className="text-gray-300 mt-3 sm:mt-4 md:mt-5 lg:mt-6 leading-relaxed tracking-wide sm:tracking-wider text-sm sm:text-base md:text-lg lg:text-xl">
+                  <p className="text-gray-300 mt-3 sm:mt-4 md:mt-5 lg:mt-6 leading-relaxed tracking-wide sm:tracking-wider text-sm sm:text-base md:text-lg lg:text-xl font-montserrat font-black">
                     {project.description}
                   </p>
-                  <Button className="mt-4 sm:mt-5 md:mt-6 lg:mt-8 bg-white text-black font-extrabold py-2 sm:py-3 md:py-3 lg:py-4 px-6 sm:px-8 md:px-10 lg:px-12 rounded-full shadow-md hover:bg-gray-200 transition text-sm sm:text-base md:text-lg lg:text-xl">
+                  <Button className="mt-4 sm:mt-5 md:mt-6 lg:mt-8 bg-white text-black font-extrabold py-2 sm:py-3 md:py-3 lg:py-4 px-6 sm:px-8 md:px-10 lg:px-12 rounded-full shadow-md hover:bg-gray-200 transition text-sm sm:text-base md:text-lg lg:text-xl font-transducerBlack">
                     VER MAIS
                   </Button>
                 </div>

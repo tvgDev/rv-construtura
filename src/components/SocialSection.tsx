@@ -40,13 +40,13 @@ const SocialSection = () => {
 >
   {/* 👇 NOVO BLOCO DE TEXTO */}
   <div>
-    <p className="font-transducerLight uppercase tracking-[0.3em] text-lg text-primary mb-2">
+    <p className="font-transducerLight uppercase tracking-[0.8em] text-3xl text-primary">
       Siga nossas
     </p>
-    <h2 className="font-title uppercase font-black text-6xl lg:text-8xl tracking-wider text-primary mb-6">
+    <h2 className="font-title uppercase font-black text-6xl lg:text-8xl text-primary mb-2 font-transducerBlack">
       Redes Sociais
     </h2>
-    <p className="text-xl text-muted-foreground leading-relaxed max-w-lg">
+    <p className="text-xl text-muted-foreground leading-relaxed max-w-lg font-montserrat font-black">
       Especialistas em demolição e construção civil. Trabalhamos com segurança, agilidade e qualidade para transformar seu projeto em realidade.
     </p>
   </div>

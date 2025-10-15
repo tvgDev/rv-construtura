@@ -49,7 +49,7 @@ const TestimonialsSection = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-section-title text-primary-foreground mb-4 tracking-wider">
+          <h2 className="text-section-title text-primary-foreground mb-4 tracking-wider font-transducerLight tracking-widest">
             DEPOIMENTOS
           </h2>
           <div className="w-24 h-1 bg-secondary mx-auto"></div>

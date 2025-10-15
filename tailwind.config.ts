@@ -24,6 +24,7 @@ export default {
         sans: ['"Nunito Sans"', "sans-serif"],
         transducer: ['Transducer', 'sans-serif'],
         transducerLight: ['Transducer-Light', 'sans-serif'],
+        transducerBlack: ['Transducer-Black', 'sans-serif'],
         montserrat: ['Montserrat', 'sans-serif'],
       },
       colors: {
