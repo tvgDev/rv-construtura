@@ -35,18 +35,6 @@ const ContactSection = () => {
                 </motion.div>
               </div>
 
-              {/* Video Overlay Info */}
-              <div className="absolute bottom-6 left-6 right-6">
-                <div className="bg-black/50 backdrop-blur-sm rounded-lg p-4">
-                  <h4 className="text-primary-foreground font-semibold mb-2">
-                    CONHEÇA NOSSA EMPRESA
-                  </h4>
-                  <p className="text-primary-foreground/80 text-sm">
-                    Assista ao vídeo e conheça nossa história, nossos valores e
-                    como transformamos sonhos em realidade.
-                  </p>
-                </div>
-              </div>
             </div>
           </motion.div>
 
@@ -59,13 +47,13 @@ const ContactSection = () => {
             className="space-y-8"
           >
             <div className="text-center lg:text-left">
-              <h2 className="text-section-title text-primary mb-4 text-white">
+              <h2 className="text-section-title text-primary text-8xl tracking-normal mb-4 text-white font-transducerBlack">
                 NOS CONHEÇA
               </h2>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-6 text-amber-200">
-                Estamos prontos para transformar seu projeto em realidade. Entre
-                em contato conosco e descubra como podemos ajudar a construir o
-                futuro que você imagina.
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6 text-[#e6c883] tracking-widest font-montserrat font-bold">
+                Especialistas em demolição e construção civil. Trabalhamos com
+                segurança, agilidade e qualidade para transformar seu projeto em
+                realidade.
               </p>
               <div className="flex text-center lg:text-left items-center justify-center lg:justify-start">
                 <img
