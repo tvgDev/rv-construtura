@@ -3,13 +3,15 @@ import { motion } from 'framer-motion';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import phoneImage from '@/assets/Celular 3D.png';
+import backgroundImage from '@/assets/40501867_mhk_2.jpg';
 
 const SocialSection = () => {
 
   return (
     <section className="py-16 sm:py-20 md:py-24 relative">
   {/* 2. A <div> vira o QUADRO: imagem de fundo e cantos arredondados. */}
-  <div className="bg-[url(./src/assets/40501867_mhk_2.jpg)] bg-no-repeat bg-cover bg-center rounded-[2rem] sm:rounded-[3rem] lg:rounded-[4rem]">
+  <div className="bg-no-repeat bg-cover bg-center rounded-[2rem] sm:rounded-[3rem] lg:rounded-[4rem]"
+      style={{ backgroundImage: `url(${backgroundImage})` }}>
     {/* 3. O container e o grid continuam dentro, para alinhar o conteúdo. */}
     <div className="container mx-auto px-4 h-[550px]">
       <div className="relative grid lg:grid-cols-2 gap-12 items-center p-12 lg:p-16 h-full lg:h-auto">
