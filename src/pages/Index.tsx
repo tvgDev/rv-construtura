@@ -8,6 +8,9 @@ import SocialSection from "@/components/SocialSection";
 import BudgetProcessSection from "@/components/BudgetProcessSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
+import backgroundImage from '@/assets/40501867_mhk_2.jpg';
+import backgroundImageBlack from '@/assets/Background-black.jpg';
+
 
 const Index = () => {
   return (
@@ -20,14 +23,16 @@ const Index = () => {
         </section>
 
         <section className="bg-black">
-          <div className="bg-[url(./src/assets/40501867_mhk_2.jpg)] bg-no-repeat bg-cover bg-center transform -skew-y-3 -translate-y-4">
+          <div className="bg-no-repeat bg-cover bg-center transform -skew-y-3 -translate-y-4"
+          style={{ backgroundImage: `url(${backgroundImage})` }}>
             <section className="py-20 skew-y-3">
               <ProcessSection />
             </section>
           </div>
         </section>
 
-        <div className="bg-[url(./src/assets/Background-black.jpg)] bg-cover bg-center transform -skew-y-3 -translate-y-4">
+        <div className="bg-cover bg-center transform -skew-y-3 -translate-y-4"
+        style={{ backgroundImage: `url(${backgroundImageBlack})` }}>
           <div className="py-20 skew-y-3">
             <TestimonialsSection />
             <SocialSection />

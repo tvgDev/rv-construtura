@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Play, Phone, Mail, MapPin } from "lucide-react";
+import novaLogo from '@/assets/logo_nova.png';
 
 const ContactSection = () => {
   return (
@@ -57,7 +58,7 @@ const ContactSection = () => {
               </p>
               <div className="flex text-center lg:text-left items-center justify-center lg:justify-start">
                 <img
-                  src="src/assets/logo_nova.png"
+                  src= {novaLogo}
                   alt="Logo Demolição"
                   className="w-14 h-14 sm:w-14 sm:h-14 md:w-18 md:h-18 object-contain flex-shrink-0"
                 />
