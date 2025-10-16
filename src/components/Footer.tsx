@@ -132,7 +132,7 @@ const Footer = () => {
           className="border-t border-primary-foreground/20 mt-12 pt-8 text-center"
         >
           <p className="text-primary-foreground/60">
-            © 2024 RV Construções. Todos os direitos reservados. | Desenvolvido com Symplus
+            © 2025 LR Demolição. Todos os direitos reservados. | Desenvolvido por Cristyan Designer
           </p>
         </motion.div>
       </div>
